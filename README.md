@@ -1,1 +1,10 @@
 # ejercicio_github_patricio
+Por Patricio Cristaldo
+
+Descripción del ejercicio: 
+Crear 1 archivo llamado dialogoNPC1.txt. Este archivo deberá contener una secuencia de 3 diálogos cortos (como si se tratase de el diálogo que utilizaría un NPC). El diálogo 3 deberá ser una pregunta que se pueda responder SI o NO.
+Crear un commit al finalizar con el nombre "Creación del Diálogo base". Pushear la rama principal al repositorio remoto.
+Crear una branch llamada "dialogo-option-si". En esta branch se debe crear un archivo nuevo llamado dialogoNPC-SI.txt.  En el se deben escribir 2 diálogos que continuarán la conversación del NPC para el caso en el que se respondería SI al la secuencia anterior. Crear un commit llamado "Dialogo opción SI".  Creado el commit modificar el archivo dialogoNPC1.txt, agregando entre corchetes, al final del archivo, lo siguiente:  ["dialogoNPC-SI"] . Crear un commit llamado "Agregado de archivo opción SI al diálogo principal". Finalmente pushear los cambios al remoto.
+Desde la branch principal crear una branch llamada "dialogo-option-no". En esta branch se debe crear un archivo nuevo llamado dialogoNPC-NO.txt.  En el se deben escribir 2 diálogos que continuarán la conversación del NPC para el caso en el que se respondería NO al la secuencia anterior. Crear un commit llamado "Dialogo opción NO". Creado el commit modificar el archivo dialogoNPC1.txt, agregando entre corchetes, al final del archivo, lo siguiente:  ["dialogoNPC-NO"] . Crear un commit llamado "Agregado de archivo opción NO al diálogo principal". Finalmente pushear los cambios al remoto.
+Desde la rama principal, mergear la rama "dialogo-option-si".  Debería mergearse sin problemas. Luego, mergear la rama "dialogo-option-no". Esto último debería arrojar un conflicto de merge. proceder a corregirlo, commitear y pushear los cambios.
+El conflicto surgirá en el archivo dialogoNPC1.txt, en la linea donde estaban el ["dialogoNPC-SI"] y  ["dialogoNPC-NO"]. Para resolverlo, simplemente unificarlos de la siguiente forma:   [ "dialogoNPC-SI" , "dialogoNPC-NO" ]
