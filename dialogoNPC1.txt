@@ -1,3 +1,4 @@
 -Hola aventurero
 -Que alegría verte por aquí
 -¿Estás listo para tu próxima misión?
+["dialogoNPC-NO"]
